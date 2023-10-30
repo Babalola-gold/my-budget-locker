@@ -42,8 +42,8 @@ var budgetArray = JSON.parse(localStorage.getItem("budget"));
             <div class="card-body" >
               <h5 class="card-text">Product: ${item.pName}</h5>
               <h5 class="card-text">Quantity: ${item.quant} </h5>
-              <h5 class="card-text">Price: ${item.prices}  </h5>
-              <h5 class="card-text">Total: ${itemCost} </h5>
+              <h5 class="card-text">Price: $${item.prices}  </h5>
+              <h5 class="card-text">Total: $${itemCost} </h5>
               <a href="#" class="btn btn-danger" onclick="deleteAny(${i})">Delete</a>
               <a href="#" class="btn btn-warning"  type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</a>
               <!-- Button trigger modal -->
@@ -54,7 +54,7 @@ var budgetArray = JSON.parse(localStorage.getItem("budget"));
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Edit here</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
